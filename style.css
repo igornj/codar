@@ -1,0 +1,132 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.button{
+    color: white;
+    background-color: #D6000D;
+    padding: 1rem 4rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.logo{
+    text-align: center;
+    color: #D6000D;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 2.5rem;     
+}
+
+
+.logo span{
+    color: black;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li{
+    padding: 1.5rem;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-call-img{
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.top-content-subtitle{
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.top-content-title{
+    color: #D6000D;
+    font-size: 2.5rem;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coder-img{
+    margin-top: 8rem;
+    width: 15rem;
+}
+
+.middle-content-subtitle{
+    margin-top: 1.5rem;
+}
+
+.middle-content-form{
+    margin-top: 1.5rem
+}
+
+.middle-content-form-subtitle{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.input-number{
+    padding: 1rem;
+    margin-bottom: 1.8rem;
+    margin-left: 2.2rem;
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 0;
+}
+
+.button-input{
+    margin-left: 1.9rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.end-section{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
