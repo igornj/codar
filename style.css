@@ -33,6 +33,11 @@ a[href^=http]{ /*email*/
     background-color: red;
 }
 
+.button-login{ /*fix later*/
+   display: none; 
+   
+}
+
 .logo{
     text-align: center;
     color: #D6000D;
@@ -95,7 +100,7 @@ a[href^=http]{ /*email*/
 }
 
 .checkmark-icon{
-    /*filtro é para mudar a cor do SVG*/ 
+    /*filtro é para mudar a cor do SVG, pego atráves do site https://codepen.io/sosuke/pen/Pjoqqp*/ 
     filter: invert(24%) sepia(89%) saturate(4554%) hue-rotate(344deg) brightness(76%) contrast(130%);
 }
 
@@ -143,8 +148,10 @@ a[href^=http]{ /*email*/
     transform: translateX(-350%) translateY(730%);  
 }
 
+
 .middle-content-subtitle{
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .middle-content-form{
@@ -173,13 +180,13 @@ a[href^=http]{ /*email*/
 }
 
 .button-input{
-    margin-left: 0.7rem;
+    margin-left: 1rem;
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding: 1rem 1.8rem 1rem 1.8rem;
 }
 
 .end-section{ /*contanier com flexbox*/
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,16 +223,17 @@ a[href^=http]{ /*email*/
 }
 
 .footer-section{
-    background-color: black;
-    color: white;
     /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
-    padding: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;*/
+    background: black;
+    color: white;
+    padding: 1rem;
 }
 
-.footer-section-title{
+
+.footer-content-title{
     text-align: center;
     font-style: italic;
     font-weight: 700;
@@ -233,27 +241,248 @@ a[href^=http]{ /*email*/
     margin-bottom: 0.5rem; 
 }
 
-.footer-section-subtitle{
+.footer-content-subtitle{
     text-align: center;
     font-size: 1.2rem;
 }
 
-.footer-section h3{
+.footer-content h3{
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
-.footer-section p{
+.footer-content p{
     margin-bottom: 1rem;
 }
 
 
-.footer-icon{
+.footer-content-icon{
     filter: invert(24%) sepia(89%) saturate(4554%) hue-rotate(344deg) brightness(76%) contrast(130%);
-    /*filtro é para mudar a cor do SVG*/    
+    /*filtro é para mudar a cor do SVG https://codepen.io/sosuke/pen/Pjoqqp*/    
     width: 2rem;
     margin: 1rem 1rem 0 0;
 }
 
+
+/**/
+
+@media (min-width: 55rem) {
+
+    body{
+        /*width: 80%;*/
+        margin: 0 auto 
+
+    }
+
+
+
+    .logo{
+        text-align: left;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin: 1rem 0 0 1.5rem;     
+    }
+
+    .button-login{
+        display: ; /*botão na nav de login*/
+        
+     }
+
+
+
+    .nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav li{
+        position: relative;
+        top: -3rem;
+        right: 0rem;
+        padding: 1.5rem;
+        color: black;
+        font-weight: 500;
+        
+    }
+
+   
+    .top-content{ /*contanier com block*/
+        display: block;
+        
+        
+    }
+
+
+    .video-call-img{
+        /*margin-top: 3.2rem;
+        margin-left: 16rem;*/
+        width: 15rem;
+        margin-left: -1rem;
+        position: absolute;
+        top: 17.5%;
+        left: 30%;
+
+    }
+
+    
+    
+    .top-content-subtitle{
+        position: absolute;
+        top: 24%;
+        left: 55%;
+        font-weight: bold;
+        
+    }
+
+
+    .top-content-title{
+        color: #D6000D;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 22.5%;
+        left: 55%;
+    }
+
+    .top-content-button{
+        position: absolute;
+        top: 25.2%;
+        left: 55%;
+        margin-top: 6rem;
+    }
+
+    .middle-content{
+        margin-top: 22rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .coder-img{
+        
+     }
+
+    .checkmark-icon{
+        display: none;
+    } 
+ 
+
+    .middle-content-subtitle{
+       margin-left: 10rem;
+       margin-top: 2rem;
+    }
+    
+    .middle-content-form{
+      margin-top: 0rem;
+      margin-left: 0rem;
+    }
+    
+    .middle-content-form-subtitle{
+        margin-top: 5rem;
+       
+    }
+
+    
+    .button-input{
+        width: 100%;
+        padding: 0.9rem 2.7rem ;
+        margin-top: 0;
+        margin-left: 1rem;
+        
+    }
+
+    .end-section{ /*contanier com flexbox*/
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr;
+    }
+
+
+    .square{ /*div com fundo cinza*/
+        margin-top: 5rem;
+        grid-row: 1/1;
+        grid-column: ;/*não funciona se não ela expande toda a square*/
+        height: 10rem;
+    }
+    
+    
+    
+    .end-section-subtitle{
+        margin: 1rem;
+        
+    }
+    
+    .end-section-title{
+        margin-left: 5.4rem;
+        font-weight: bold;
+    }
+
+
+    .footer-section{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1.5rem;
+        /*separando os conteúdos em divs, funcionou*/ 
+    }
+
+
+    .footer-content{
+        padding: 1rem;
+    }
+    
+    .footer-content-title{
+        text-align: left;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem; 
+    }
+    
+    .footer-content-subtitle{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    
+    .footer-content h3{
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .footer-content p{
+        margin-bottom: 1rem;
+        
+    }
+
+    .footer-content p :nth-child(4){ /*acessar 4 paragrafo*/
+        width: 50%;
+    }
+    
+    
+    .footer-content-icon{
+        filter: invert(24%) sepia(89%) saturate(4554%) hue-rotate(344deg) brightness(76%) contrast(130%);
+        /*filtro é para mudar a cor do SVG, pego atráves do site https://codepen.io/sosuke/pen/Pjoqqp*/    
+        width: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+
+
+
+
+    
+  
+
+
+
+   
+
+}
 
 
